@@ -1,0 +1,14 @@
+по умолчанию файл входа в src/index.js а результат в dist/
+
+nmp init
+npm install webpack@4.10.1
+npm install webpack@4.0.0
+npm install babel-loader babel-core babel-preset-env babel-preset-stage-3 --save
+
+С выводом ошибок
+NODE_ENV=development webpack --config webpack.config.js --display-error-details
+NODE_ENV=production webpack --config webpack.config.js --display-error-details
+
+Сборка для разработки и на сайт посредством переменных окружения
+Несколько точек входа, что бы не пихать весь js в один файл
+Динамическая подгрузка модулей через require
